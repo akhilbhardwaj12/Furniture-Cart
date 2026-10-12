@@ -1,0 +1,263 @@
+
+.lux-products {
+  width: min(1200px, calc(100% - 48px));
+  margin: 100px auto;
+  scroll-margin-top: 120px;
+}
+
+.lux-products-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 38px;
+}
+
+.lux-products-eyebrow {
+  color: #9a7954;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.lux-products-heading h2 {
+  margin: 14px 0;
+  color: #292820;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 4.5vw, 52px);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -1px;
+}
+
+.lux-products-heading p {
+  margin: 0;
+  color: #77766e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.lux-products-count {
+  padding-bottom: 8px;
+  color: #77766e;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+}
+
+.lux-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 36px 20px;
+}
+
+.lux-product-card {
+  min-width: 0;
+  animation: lux-product-enter 0.45s ease both;
+}
+
+.lux-product-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 3 / 3.65;
+  background: #f0eee8;
+  color: #292820;
+}
+
+.lux-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  transition: transform 0.55s ease;
+}
+
+.lux-product-card:hover .lux-product-image img {
+  transform: scale(1.06);
+}
+
+.lux-product-category {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  padding: 7px 10px;
+  background: rgba(250, 249, 246, 0.92);
+  color: #334b3d;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.lux-product-view {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 15px;
+  background: #334b3d;
+  color: white;
+  font-size: 11px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.lux-product-card:hover .lux-product-view,
+.lux-product-card:focus-within .lux-product-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lux-product-info {
+  padding-top: 17px;
+}
+
+.lux-product-name {
+  display: block;
+  color: #292820;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.lux-product-name:hover {
+  color: #657966;
+}
+
+.lux-product-caption {
+  margin: 7px 0 15px;
+  color: #85837a;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.lux-product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 13px;
+  border-top: 1px solid #e9e5dc;
+}
+
+.lux-product-price {
+  color: #334b3d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.lux-product-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid #d9d5ca;
+  background: transparent;
+  color: #334b3d;
+  font-size: 11px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lux-product-add span:first-child {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.lux-product-add:hover {
+  border-color: #334b3d;
+  background: #334b3d;
+  color: #fff;
+}
+
+.lux-product-cart-status {
+  margin: 9px 0 0;
+  color: #657966;
+  font-size: 10px;
+}
+
+.lux-products-empty {
+  padding: 60px 20px;
+  background: #f0eee8;
+  text-align: center;
+}
+
+.lux-products-empty h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.lux-products-empty p {
+  color: #77766e;
+  font-size: 13px;
+}
+
+@keyframes lux-product-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .lux-products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .lux-products {
+    width: calc(100% - 32px);
+    margin: 65px auto;
+  }
+
+  .lux-products-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .lux-products-heading h2 {
+    font-size: 36px;
+  }
+
+  .lux-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 12px;
+  }
+
+  .lux-product-name {
+    font-size: 16px;
+  }
+
+  .lux-product-image {
+    aspect-ratio: 3 / 3.8;
+  }
+
+  .lux-product-view {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lux-product-card {
+    animation: none;
+  }
+
+  .lux-product-image img,
+  .lux-product-view {
+    transition: none;
+  }
+}

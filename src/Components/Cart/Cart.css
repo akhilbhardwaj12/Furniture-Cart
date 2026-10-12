@@ -1,0 +1,382 @@
+
+.lux-cart-page {
+  min-height: 70vh;
+  padding: 65px 0 100px;
+  background: #faf9f6;
+  color: #292820;
+}
+
+.lux-cart-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.lux-cart-heading {
+  margin-bottom: 45px;
+}
+
+.lux-cart-eyebrow,
+.lux-order-eyebrow {
+  color: #9a7954;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+
+.lux-cart-heading h1 {
+  margin: 13px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.lux-cart-heading p {
+  margin: 0;
+  color: #77766e;
+  font-size: 13px;
+}
+
+.lux-cart-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  align-items: start;
+  gap: 55px;
+}
+
+.lux-cart-items-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dcd7cc;
+  color: #77766e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.lux-cart-items-heading button,
+.lux-cart-remove {
+  padding: 5px 0;
+  border: none;
+  background: transparent;
+  color: #77766e;
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lux-cart-item {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr) auto;
+  gap: 22px;
+  padding: 25px 0;
+  border-bottom: 1px solid #e9e5dc;
+}
+
+.lux-cart-item-image {
+  display: block;
+  overflow: hidden;
+  background: #f0eee8;
+  aspect-ratio: 1 / 1.1;
+}
+
+.lux-cart-item-image img {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.lux-cart-item-image:hover img {
+  transform: scale(1.06);
+}
+
+.lux-cart-item-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.lux-cart-item-category {
+  margin-bottom: 7px;
+  color: #9a7954;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lux-cart-item-name {
+  color: #292820;
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.lux-cart-item-price {
+  margin-top: 8px;
+  color: #334b3d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lux-cart-item-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.lux-quantity-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 105px;
+  height: 35px;
+  border: 1px solid #dcd7cc;
+}
+
+.lux-quantity-control button {
+  width: 32px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #334b3d;
+  font-size: 18px;
+}
+
+.lux-quantity-control button:hover {
+  background: #eae9e1;
+}
+
+.lux-quantity-control span {
+  font-size: 12px;
+}
+
+.lux-cart-item-subtotal {
+  padding-top: 3px;
+  color: #292820;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.lux-cart-continue {
+  display: inline-block;
+  margin-top: 25px;
+  color: #334b3d;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lux-order-summary {
+  position: sticky;
+  top: 115px;
+  padding: 30px 25px;
+  border: 1px solid #e5e0d5;
+  background: #fff;
+}
+
+.lux-order-summary h2 {
+  margin: 12px 0 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.lux-order-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 18px 0;
+  color: #77766e;
+  font-size: 12px;
+}
+
+.lux-order-line span:last-child {
+  color: #292820;
+  text-align: right;
+}
+
+.lux-shipping-note {
+  margin: 20px 0;
+  padding: 12px;
+  background: #f5f3ed;
+  color: #77766e;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.lux-order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e9e5dc;
+}
+
+.lux-order-total span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lux-order-total strong {
+  color: #334b3d;
+  font-size: 21px;
+}
+
+.lux-checkout-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 17px 18px;
+  border: 1px solid #334b3d;
+  background: #334b3d;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lux-checkout-button:hover {
+  background: #24372b;
+}
+
+.lux-checkout-button span {
+  font-size: 17px;
+}
+
+.lux-checkout-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 17px;
+  color: #77766e;
+  font-size: 10px;
+}
+
+.lux-checkout-note span {
+  color: #9a7954;
+  font-size: 17px;
+}
+
+.lux-cart-empty {
+  padding: 70px 20px;
+  border: 1px solid #e9e5dc;
+  background: #fff;
+  text-align: center;
+}
+
+.lux-cart-empty-icon {
+  color: #9a7954;
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+}
+
+.lux-cart-empty h2 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(25px, 4vw, 36px);
+  font-weight: 500;
+}
+
+.lux-cart-empty p {
+  margin-bottom: 28px;
+  color: #77766e;
+  font-size: 13px;
+}
+
+.lux-cart-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px 22px;
+  background: #334b3d;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .lux-cart-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 25px;
+  }
+
+  .lux-cart-item {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .lux-cart-item-subtotal {
+    grid-column: 2;
+  }
+
+  .lux-cart-item-controls {
+    padding-top: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .lux-cart-page {
+    padding: 40px 0 65px;
+  }
+
+  .lux-cart-container {
+    width: calc(100% - 32px);
+  }
+
+  .lux-cart-heading {
+    margin-bottom: 30px;
+  }
+
+  .lux-cart-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lux-cart-item {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .lux-cart-item-name {
+    font-size: 16px;
+  }
+
+  .lux-cart-item-subtotal {
+    grid-column: 2;
+  }
+
+  .lux-order-summary {
+    position: static;
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .lux-cart-item {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .lux-cart-item-controls {
+    gap: 10px;
+  }
+
+  .lux-quantity-control {
+    min-width: 90px;
+  }
+}

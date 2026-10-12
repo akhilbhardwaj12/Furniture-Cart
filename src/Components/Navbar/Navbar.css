@@ -1,0 +1,233 @@
+
+.login-nav-link {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #222 !important;
+  background-color: #f5f0e8;
+  border: 1px solid #222;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 10;
+}
+
+.login-nav-link:hover {
+  color: #fff !important;
+  background-color: #222;
+}
+
+.lux-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  padding: 10px 20px;
+  background: #25231f;
+  color: #f8f4ed;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Main navbar */
+.lux-navbar {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background: #fffdf9;
+  border-bottom: 1px solid #e8e2d9;
+}
+
+.lux-navbar-inner {
+  max-width: 1440px;
+  min-height: 88px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+/* Brand */
+.lux-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #24211d;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.lux-brand-mark {
+  font-family: Georgia, serif;
+  font-size: 34px;
+}
+
+.lux-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lux-brand-text strong {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  letter-spacing: 3px;
+}
+
+.lux-brand-text small {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+/* Navigation links */
+.lux-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.lux-nav-links a {
+  color: #34312c;
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lux-nav-links a:hover,
+.lux-nav-links a.active {
+  color: #a4774d;
+}
+
+/* Sign In and cart */
+.lux-nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.login-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border: 1px solid #302a24;
+  color: #302a24;
+  background: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.login-nav-link:hover {
+  color: white;
+  background: #302a24;
+}
+
+.lux-cart-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #302a24;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lux-cart-count {
+  font-size: 12px;
+}
+
+/* Hide mobile menu toggle on desktop */
+.lux-menu-toggle {
+  display: none;
+}
+
+/* Responsive navbar */
+@media (max-width: 900px) {
+  .lux-navbar-inner {
+    min-height: 76px;
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .lux-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .lux-menu-toggle span {
+    width: 24px;
+    height: 1px;
+    background: #302a24;
+  }
+
+  .lux-nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: #fffdf9;
+    border-top: 1px solid #eee7df;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .lux-nav-links.is-open {
+    display: flex;
+  }
+
+  .lux-nav-actions {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lux-navbar-inner {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .lux-brand-mark {
+    font-size: 27px;
+  }
+
+  .lux-brand-text strong {
+    font-size: 17px;
+  }
+
+  .lux-brand-text small {
+    font-size: 7px;
+  }
+
+  .login-nav-link {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .lux-cart-link {
+    gap: 4px;
+  }
+}

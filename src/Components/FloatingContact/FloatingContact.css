@@ -1,0 +1,593 @@
+
+/* =========================================
+   FLOATING CONTACT WIDGET
+   Complete Responsive CSS
+========================================= */
+
+.floating-contact {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.floating-contact *,
+.floating-contact *::before,
+.floating-contact *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   WHATSAPP + EMAIL PANEL
+========================================= */
+
+.fc-contact-panel {
+  position: fixed;
+  top: 18%;
+  right: 20px;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+
+  width: 180px;
+  padding: 22px 14px;
+
+  background: #ad8bb0;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px #00000012;
+}
+
+.fc-contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.fc-contact-item:hover {
+  opacity: 0.9;
+}
+
+/* Contact Icons */
+
+.fc-whatsapp-icon,
+.fc-mail-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+  font-size: 25px;
+  background: #fff;
+  color: #804487;
+}
+
+.fc-whatsapp-icon {
+  background: #08cf7a;
+  color: #fff;
+}
+
+/* =========================================
+   FREE ESTIMATE BUTTON
+========================================= */
+
+.fc-estimate-button {
+  position: fixed;
+  top: 58%;
+  right: 20px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 330px;
+  max-width: calc(100vw - 40px);
+  min-height: 78px;
+  padding: 18px 20px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: #804487;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: clamp(20px, 2vw, 25px);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.fc-estimate-button:hover {
+  background: #702d76;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   CHAT LAUNCHER
+========================================= */
+
+.fc-chat-launcher {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1002;
+
+  display: grid;
+  place-items: center;
+
+  width: 64px;
+  height: 64px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #702d76;
+  color: #fff;
+
+  font-size: 29px;
+  line-height: 1;
+  cursor: pointer;
+
+  box-shadow: 0 5px 18px #00000020;
+  transition: transform 0.2s ease;
+}
+
+.fc-chat-launcher:hover {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   CHAT WINDOW
+========================================= */
+
+.fc-chat-window {
+  position: fixed;
+  right: 20px;
+  bottom: 104px;
+  z-index: 1003;
+
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: min(520px, calc(100dvh - 140px));
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid #e6dce7;
+  border-radius: 15px;
+
+  box-shadow: 0 12px 40px #00000020;
+}
+
+.fc-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 15px 17px;
+
+  background: #804487;
+  color: #fff;
+}
+
+.fc-chat-header button,
+.fc-modal-close {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fc-chat-body {
+  padding: 18px;
+  overflow-y: auto;
+  color: #555;
+}
+
+.fc-offline {
+  margin: 0;
+  color: #333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   CHAT + ESTIMATE FORM FIELDS
+========================================= */
+
+.fc-chat-body textarea,
+.fc-estimate-modal input,
+.fc-estimate-modal select,
+.fc-estimate-modal textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 11px;
+  padding: 12px 13px;
+
+  border: 1px solid #ddd4df;
+  border-radius: 7px;
+
+  background: #fff;
+  color: #292929;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.fc-chat-body textarea,
+.fc-estimate-modal textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.fc-chat-body input:focus,
+.fc-chat-body textarea:focus,
+.fc-estimate-modal input:focus,
+.fc-estimate-modal select:focus,
+.fc-estimate-modal textarea:focus {
+  outline: 2px solid #ad8bb0;
+  outline-offset: 1px;
+}
+
+/* Form Submit Button */
+
+.fc-primary-button {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #804487;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.fc-primary-button:hover {
+  background: #702d76;
+}
+
+/* =========================================
+   ESTIMATE MODAL BACKDROP
+========================================= */
+
+.fc-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+
+  display: grid;
+  place-items: center;
+
+  padding: 20px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  background: #17130f99;
+}
+
+/* =========================================
+   ESTIMATE MODAL
+========================================= */
+
+.fc-estimate-modal {
+  position: relative;
+
+  width: 480px;
+  max-width: 100%;
+  max-height: calc(100dvh - 40px);
+
+  padding: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border-radius: 16px;
+
+  background: #fffdf9;
+  color: #302a24;
+
+  box-shadow: 0 16px 50px #00000025;
+}
+
+.fc-modal-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+
+  width: 32px;
+  height: 32px;
+
+  color: #302a24;
+}
+
+.fc-eyebrow {
+  margin: 0 0 8px;
+  color: #956c46;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.fc-estimate-modal h2 {
+  margin: 10px 0 16px;
+  padding-right: 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 4vw, 30px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .fc-contact-panel {
+    top: auto;
+    right: 14px;
+    bottom: 125px;
+
+    width: 120px;
+    gap: 14px;
+    padding: 14px 10px;
+
+    border-radius: 15px;
+  }
+
+  .fc-contact-item {
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .fc-whatsapp-icon,
+  .fc-mail-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .fc-estimate-button {
+    top: auto;
+    right: 14px;
+    bottom: 30px;
+
+    width: min(240px, calc(100vw - 28px));
+    min-height: 54px;
+    padding: 13px 12px;
+
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .fc-chat-launcher {
+    right: 16px;
+    bottom: 105px;
+
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+  }
+
+  .fc-chat-window {
+    right: 12px;
+    bottom: 165px;
+
+    width: 330px;
+    max-width: calc(100vw - 24px);
+    max-height: calc(100dvh - 190px);
+  }
+
+  .fc-chat-header {
+    padding: 13px 15px;
+  }
+
+  .fc-chat-body {
+    padding: 15px;
+  }
+
+  .fc-modal-backdrop {
+    padding: 14px;
+  }
+
+  .fc-estimate-modal {
+    width: 460px;
+    padding: 26px 22px;
+    max-height: calc(100dvh - 28px);
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .fc-contact-panel {
+    right: 10px;
+    bottom: 116px;
+
+    width: 102px;
+    gap: 12px;
+    padding: 12px 8px;
+
+    border-radius: 13px;
+  }
+
+  .fc-contact-item {
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .fc-whatsapp-icon,
+  .fc-mail-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .fc-estimate-button {
+    right: 10px;
+    bottom: 26px;
+
+    width: min(205px, calc(100vw - 20px));
+    min-height: 48px;
+    padding: 11px 9px;
+
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .fc-chat-launcher {
+    right: 12px;
+    bottom: 98px;
+
+    width: 44px;
+    height: 44px;
+    font-size: 21px;
+  }
+
+  .fc-chat-window {
+    right: 10px;
+    bottom: 154px;
+
+    width: 310px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100dvh - 175px);
+  }
+
+  .fc-chat-header {
+    padding: 12px;
+  }
+
+  .fc-chat-body {
+    padding: 13px;
+  }
+
+  .fc-modal-backdrop {
+    padding: 10px;
+  }
+
+  .fc-estimate-modal {
+    width: 100%;
+    padding: 24px 17px;
+    border-radius: 12px;
+    max-height: calc(100dvh - 20px);
+  }
+
+  .fc-estimate-modal h2 {
+    font-size: 24px;
+  }
+
+  .fc-estimate-modal input,
+  .fc-estimate-modal select,
+  .fc-estimate-modal textarea {
+    padding: 11px;
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 360px) {
+  .fc-contact-panel {
+    right: 8px;
+    bottom: 108px;
+
+    width: 92px;
+    gap: 10px;
+    padding: 10px 6px;
+  }
+
+  .fc-contact-item {
+    font-size: 10px;
+  }
+
+  .fc-whatsapp-icon,
+  .fc-mail-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .fc-estimate-button {
+    right: 8px;
+    bottom: 24px;
+
+    width: 175px;
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .fc-chat-launcher {
+    right: 10px;
+    bottom: 92px;
+
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+  }
+
+  .fc-chat-window {
+    right: 8px;
+    width: calc(100vw - 16px);
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .fc-estimate-button,
+  .fc-chat-launcher,
+  .fc-primary-button {
+    transition: none;
+  }
+}

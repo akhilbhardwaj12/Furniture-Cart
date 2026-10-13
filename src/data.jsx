@@ -54,7 +54,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
         },
     },
     {
@@ -66,7 +66,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -78,7 +78,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -90,7 +90,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-           shipping: 'On Orders above $100'
+           shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -102,7 +102,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -114,7 +114,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
         },
     },
     {
@@ -126,7 +126,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -138,7 +138,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -150,7 +150,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-           shipping: 'On Orders above $100'
+           shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -162,7 +162,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -174,7 +174,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
         },
     },
     {
@@ -186,7 +186,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -198,7 +198,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -210,7 +210,7 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-           shipping: 'On Orders above $100'
+           shipping: 'On Orders above ₹100'
           },
     },
     {
@@ -222,7 +222,151 @@ export const product_list = [
         productDetail :{
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
             delivery: '5-7 Days from order date.',
-            shipping: 'On Orders above $100'
+            shipping: 'On Orders above ₹100'
           },
-    },    
+    },
+    {
+        id: 16,
+        name: "Cloudline Three-Seater Sofa",
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85",
+        price: 48500,
+        category: "Sofa",
+        productDetail: {
+            description: "A generous, softly tailored sofa with deep cushions and a relaxed silhouette for everyday lounging.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 17,
+        name: "Sculpted Oak Side Table",
+        image: "https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=900&q=85",
+        price: 7900,
+        category: "Table",
+        productDetail: {
+            description: "A warm oak side table with a clean, considered profile, made to keep your everyday essentials close.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 18,
+        name: "Form Upholstered Lounge Chair",
+        image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=85",
+        price: 18500,
+        category: "Chair",
+        productDetail: {
+            description: "A sculptural accent chair with inviting upholstery, designed for a quiet reading corner or a relaxed living room.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 19,
+        name: "Solstice Entryway Console",
+        image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=85",
+        price: 22400,
+        category: "Cabinet",
+        productDetail: {
+            description: "A versatile wood console that brings thoughtful storage and a natural finish to entryways and living spaces.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 20,
+        name: "Aurelia Brass Floor Lamp",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+        price: 6400,
+        category: "Lightning",
+        productDetail: {
+            description: "A softly glowing floor lamp with a timeless profile, bringing warm, ambient light to your favourite spaces.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 21,
+        name: "Linen Retreat Platform Bed",
+        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85",
+        price: 62900,
+        category: "Bed",
+        productDetail: {
+            description: "A serene platform bed with understated lines and a softly upholstered headboard for a restful retreat.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 22,
+        name: "Marlow Bouclé Accent Chair",
+        image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=85",
+        price: 21900,
+        category: "Chair",
+        productDetail: {
+            description: "A softly rounded accent chair in textured upholstery, bringing sculptural comfort to a favourite corner.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 23,
+        name: "Arden Round Coffee Table",
+        image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=900&q=85",
+        price: 16400,
+        category: "Table",
+        productDetail: {
+            description: "A thoughtfully proportioned coffee table with a warm, natural finish for relaxed everyday gatherings.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 24,
+        name: "Serene Upholstered Bed",
+        image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85",
+        price: 58400,
+        category: "Bed",
+        productDetail: {
+            description: "A calm, upholstered bed with clean lines and a soft headboard designed for slow mornings and restful nights.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 25,
+        name: "Sunday Modular Sofa",
+        image: "https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=900&q=85",
+        price: 72900,
+        category: "Sofa",
+        productDetail: {
+            description: "A generous modular sofa with inviting proportions, made to adapt to movie nights, visits, and quiet afternoons.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 26,
+        name: "Sienna Wood Storage Cabinet",
+        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85",
+        price: 34800,
+        category: "Cabinet",
+        productDetail: {
+            description: "A considered storage cabinet with a natural wood look, bringing useful space and quiet character to the room.",
+            delivery: "7-10 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
+    {
+        id: 27,
+        name: "Aurelia Brass Table Lamp",
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+        price: 5200,
+        category: "Lightning",
+        productDetail: {
+            description: "A warm, softly diffused table lamp with a refined silhouette for bedside tables and reading nooks.",
+            delivery: "5-7 Days from order date.",
+            shipping: "Complimentary delivery on orders above ₹100"
+        },
+    },
 ]

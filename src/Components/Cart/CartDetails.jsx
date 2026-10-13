@@ -1,7 +1,8 @@
-import React, {useContext} from 'react'
+import {useContext} from 'react'
 import { ShopContext } from '../ShopContext/ShopContext'
 import { FiTrash2 } from 'react-icons/fi';
 import { IoMdAdd, IoMdRemove } from 'react-icons/io';
+import { formatCurrency } from '../../api.js';
 
 
 const CartDetails = ({item}) => {
@@ -30,8 +31,8 @@ const CartDetails = ({item}) => {
                     <IoMdAdd />
                 </button>
             </div>
-            <div className="price"> ${price}</div>
-            <div className="total">{`$ ${parseFloat(price * amount).toFixed(2)}`} </div>
+            <div className="price">{formatCurrency(price)}</div>
+            <div className="total">{formatCurrency(price * amount)}</div>
         </div>
     </div>
   )

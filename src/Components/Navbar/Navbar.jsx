@@ -7,8 +7,25 @@ import "./Navbar.css";
 const Navbar = () => {
   const { itemAmount } = useContext(ShopContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [user, setUser] = useState(() => {
+    const savedUser = sessionStorage.getItem("arveUser");
+    if (!savedUser) return null;
+
+    try {
+      return JSON.parse(savedUser);
+    } catch (error) {
+      console.error("Unable to read the saved user session:", error);
+      return null;
+    }
+  });
 
   const closeMenu = () => setMenuOpen(false);
+  const signOut = () => {
+    sessionStorage.removeItem("arveToken");
+    sessionStorage.removeItem("arveUser");
+    setUser(null);
+    closeMenu();
+  };
 
   return (
     <>
@@ -56,13 +73,29 @@ const Navbar = () => {
           </nav>
 
           <div className="lux-nav-actions">
-            <Link
-              to="/login"
-              className="login-nav-link"
-              onClick={closeMenu}
-            >
-              Sign In
-            </Link>
+            {user?.role === "admin" && (
+              <Link to="/admin" className="login-nav-link" onClick={closeMenu}>
+                Admin
+              </Link>
+            )}
+
+            {user ? (
+              <button
+                type="button"
+                className="login-nav-link lux-sign-out"
+                onClick={signOut}
+              >
+                Sign Out
+              </button>
+            ) : (
+              <Link
+                to="/login"
+                className="login-nav-link"
+                onClick={closeMenu}
+              >
+                Sign In
+              </Link>
+            )}
 
             <Link
               to="/cart"

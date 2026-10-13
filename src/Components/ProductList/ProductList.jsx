@@ -1,7 +1,8 @@
 
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../ShopContext/ShopContext.jsx";
+import { formatCurrency } from "../../api.js";
 import "./ProductList.css";
 
 const ProductList = ({ category }) => {
@@ -78,7 +79,7 @@ const ProductList = ({ category }) => {
 
                 <div className="lux-product-bottom">
                   <span className="lux-product-price">
-                    ${Number(product.price).toLocaleString("en-US")}
+                    {formatCurrency(product.price)}
                   </span>
 
                   <button

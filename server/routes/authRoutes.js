@@ -3,8 +3,21 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/user.js";
+import requireAdmin from "../middleware/requireAdmin.js";
 
 const router = express.Router();
+
+router.get("/me", requireAdmin, (req, res) => {
+  return res.json({
+    success: true,
+    user: {
+      id: req.admin._id,
+      fullName: req.admin.fullName,
+      email: req.admin.email,
+      role: req.admin.role,
+    },
+  });
+});
 
 router.post("/register", async (req, res) => {
   try {
@@ -53,6 +66,7 @@ router.post("/register", async (req, res) => {
         id: user._id,
         fullName: user.fullName,
         email: user.email,
+        role: user.role,
       },
     });
   } catch (error) {
@@ -120,6 +134,7 @@ router.post("/login", async (req, res) => {
         id: user._id,
         fullName: user.fullName,
         email: user.email,
+        role: user.role,
       },
     });
   } catch (error) {

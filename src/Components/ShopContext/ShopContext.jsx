@@ -1,11 +1,12 @@
 
-import React, {
+import {
   createContext,
   useState,
   useEffect,
 } from "react";
 
 import { product_list } from "../../data.jsx";
+import { apiRequest } from "../../api.js";
 
 export const ShopContext = createContext();
 
@@ -20,7 +21,7 @@ const getSavedCart = () => {
 };
 
 export const ShopContextProvider = ({ children }) => {
-  const [products] = useState(product_list);
+  const [catalog, setCatalog] = useState(product_list);
   const [cart, setCart] = useState(getSavedCart);
 
   const [itemAmount, setItemAmount] = useState(0);
@@ -30,6 +31,16 @@ export const ShopContextProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("arve-cart", JSON.stringify(cart));
   }, [cart]);
+
+  useEffect(() => {
+    apiRequest("/products")
+      .then(({ products: savedProducts }) => {
+        if (savedProducts.length > 0) setCatalog(savedProducts);
+      })
+      .catch((error) => {
+        console.error("Unable to load the saved product catalog:", error);
+      });
+  }, []);
 
   // Calculate total quantity and price
   useEffect(() => {
@@ -112,7 +123,7 @@ export const ShopContextProvider = ({ children }) => {
   return (
     <ShopContext.Provider
       value={{
-        products,
+        products: catalog,
         cart,
         addToCart,
         removeFromCart,

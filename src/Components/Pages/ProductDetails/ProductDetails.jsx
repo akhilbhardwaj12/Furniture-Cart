@@ -1,17 +1,17 @@
 
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "./ProductDetails.css";
 
 import Navbar from "../../Navbar/Navbar.jsx";
 import { ShopContext } from "../../ShopContext/ShopContext.jsx";
-import { product_list } from "../../../data.jsx";
+import { formatCurrency } from "../../../api.js";
 import { useParams, Link } from "react-router-dom";
 
 const ProductDetails = () => {
-  const { itemAmount, addToCart } = useContext(ShopContext);
+  const { itemAmount, addToCart, products } = useContext(ShopContext);
   const { id } = useParams();
 
-  const product = product_list.find(
+  const product = products.find(
     (item) => item.id === Number(id)
   );
 
@@ -41,8 +41,8 @@ const ProductDetails = () => {
 
         <div className="detail_right">
           <h3>{product.name}</h3>
-          <p className="product-price">$ {product.price}</p>
-          <p className="desc">{product.productDetail.description}</p>
+          <p className="product-price">{formatCurrency(product.price)}</p>
+          <p className="desc">{product.productDetail?.description}</p>
 
           <div className="product_qty_cart">
             <div className="p_qty">
@@ -77,9 +77,9 @@ const ProductDetails = () => {
         <div className="tab_content">
           {activeTab === "description" && (
             <div className="tab__pane">
-              <p>{product.productDetail.description}</p>
-              <p>Delivery: {product.productDetail.delivery}</p>
-              <p>Shipping: {product.productDetail.shipping}</p>
+              <p>{product.productDetail?.description}</p>
+              <p>Delivery: {product.productDetail?.delivery}</p>
+              <p>Shipping: {product.productDetail?.shipping}</p>
             </div>
           )}
 

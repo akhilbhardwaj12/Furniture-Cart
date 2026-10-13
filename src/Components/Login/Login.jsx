@@ -1,10 +1,9 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar.jsx";
+import { API_URL } from "../../api.js";
 import "./Login.css";
-
-const API_URL = "http://localhost:5000/api/auth";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -42,7 +41,7 @@ const Login = () => {
             password,
           };
 
-      const response = await fetch(`${API_URL}/${endpoint}`, {
+      const response = await fetch(`${API_URL}/auth/${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,11 +66,13 @@ const Login = () => {
 
         setMessage("Login successful! Redirecting...");
 
-        navigate("/");
+        navigate(data.user.role === "admin" ? "/admin" : "/");
       }
     } catch (error) {
       setMessage(
-        error.message || "Unable to connect to the server. Please try again."
+        error instanceof TypeError
+          ? "Unable to reach the furniture API. Start the backend and confirm MongoDB is connected. If you use Atlas, allow this machine's IP in Network Access."
+          : error.message || "Unable to connect to the server. Please try again."
       );
     } finally {
       setLoading(false);

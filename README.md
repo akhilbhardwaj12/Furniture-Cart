@@ -1,5 +1,11 @@
 # React + Vite
 
+## Storefront access
+
+Sign in or create an account before accessing the storefront, product pages,
+shopping cart, or administrator workspace. If you open a protected page while
+signed out, you will be sent to sign in and returned to that page afterward.
+
 ## Admin workspace
 
 The administrator workspace is available at `/admin`. It requires an admin

@@ -1,12 +1,13 @@
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar.jsx";
 import { API_URL } from "../../api.js";
 import "./Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [isSignup, setIsSignup] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -66,7 +67,10 @@ const Login = () => {
 
         setMessage("Login successful! Redirecting...");
 
-        navigate(data.user.role === "admin" ? "/admin" : "/");
+        navigate(
+          location.state?.from || (data.user.role === "admin" ? "/admin" : "/"),
+          { replace: true }
+        );
       }
     } catch (error) {
       setMessage(

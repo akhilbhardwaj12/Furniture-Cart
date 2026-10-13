@@ -1,10 +1,11 @@
 
-import React, { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ShopContext } from "../ShopContext/ShopContext.jsx";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const { itemAmount } = useContext(ShopContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState(() => {
@@ -25,6 +26,7 @@ const Navbar = () => {
     sessionStorage.removeItem("arveUser");
     setUser(null);
     closeMenu();
+    navigate("/login", { replace: true });
   };
 
   return (
